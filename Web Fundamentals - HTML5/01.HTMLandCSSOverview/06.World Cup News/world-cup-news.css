@@ -1,22 +1,30 @@
-#wrapper{
+#wrapper {
     width: 700px;
     height: 730px;
     border: 1px solid #000000;
     padding: 10px;
     background-color: #a6e1ec;
+    margin: auto;
 }
-#wrapper img{
+
+#wrapper img {
     width: 200px;
     margin-outside: 10px;
     vertical-align: middle;
 }
-#wrapper li{
+
+#wrapper li {
     width: 600px;
     padding: 10px;
     margin-bottom: 5px;
     font-size: 14px;
     border: 1px solid #000000;
 }
-#wrapper .text{
+
+#wrapper .text {
     color: #2EA620;
+}
+
+#wrapper ul {
+    list-style: none;
 }
