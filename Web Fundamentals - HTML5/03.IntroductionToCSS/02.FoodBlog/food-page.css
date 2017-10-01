@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+
+header {
+    background: url("images/header.jpg") no-repeat;
+    height: 200px;
+}
+
+header h1 {
+    text-align: center;
+    color: white;
+    line-height: 200px;
+}
+
+main {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.content {
+    width: 600px;
+    float: left;
+}
+
+.content article h1 {
+    margin: 20px 0;
+}
+
+.content article .date {
+    margin: 5px 0;
+}
+
+.content article p {
+    margin: 5px 0;
+}
+
+.content article button {
+    color: #ec5353;
+    border: 3px solid #ec5353;
+    border-radius: 30px;
+    width: 120px;
+    height: 40px;
+    background: none;
+}
+
+.content article button:hover {
+    color: #FFFFFF;
+    background-color: #ec5353;
+    cursor: pointer;
+}
+
+aside {
+    width: 350px;
+    float: right;
+}
+
+aside h1 {
+    margin: 20px 0;
+}
+
+aside p {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+}
