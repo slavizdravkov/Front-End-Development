@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Vollkorn');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Vollkorn', serif;
+}
+
+main {
+    width: 1000px;
+    margin: 0 auto;
+    color: #7E7E87;
+}
+
+header h1 {
+    text-align: center;
+    margin: 25px 0 15px 0;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.items {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 43px;
+    width: 300px;
+    text-align: center;
+    border: 1px solid #dbdbdb;
+    height: 451px;
+    position: relative;
+}
+
+.items:last-child {
+    margin: 0;
+}
+
+.items h2 {
+    text-transform: capitalize;
+    background: #EBEFF2;
+    padding: 10px 0;
+    font-size: 30px;
+}
+
+.items:hover h2, .items:hover button {
+    background: #65D3E2;
+}
+
+.items:hover .price {
+    color: #65D3E2;
+}
+
+.price {
+    font-size: 60px;
+}
+
+.products {
+    list-style: none;
+}
+
+.products li {
+    text-align: left;
+    margin: 0 15px;
+    padding: 20px 0 0 5px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.products li, button {
+    font-family: 'Tahoma', sans-serif;
+    font-size: 16px;
+}
+
+button {
+    text-transform: capitalize;
+    padding: 10px 55px;
+    background: #EBEFF2;
+    margin: 50px 0 15px 0;
+    border: none;
+    border-radius: 15px;
+    color: #7E7E87;
+    position: absolute;
+    top: 345px;
+    left: 45px;
+}
