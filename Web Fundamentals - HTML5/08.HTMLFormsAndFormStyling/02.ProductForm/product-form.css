@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    background: #FAFAFA;
+}
+
+main {
+    background: #ffffff;
+    width: 800px;
+    margin: 50px auto;
+    border-radius: 20px;
+}
+
+.product-image {
+    width: 30%;
+    background: linear-gradient(to bottom, #6afdc9 0%,#42c9ca 100%);
+    border-radius: 20px 0 0 20px;
+}
+
+.product-image img {
+    width: 100%;
+    display: block;
+    margin: 85px auto;
+}
+
+.product-image, form {
+    display: inline-block;
+}
+form {
+    width: 65%;
+    vertical-align: top;
+    margin-left: 25px;
+}
+
+form h1 {
+    font-weight: 700;
+    padding-top: 30px;
+    font-family: 'Anton', sans-serif;
+}
+
+form h3 {
+    font-family: 'Anton', sans-serif;
+    padding: 20px 0;
+}
+
+label {
+    display: block;
+}
+
+.size select {
+    margin: 10px 0 10px 15px;
+    width: 150px;
+    border: none;
+    background: #42c9ca;
+    height: 25px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-left: 5px;
+}
+
+input {
+    margin: 10px 0 10px 15px;
+    width: 150px;
+    border: none;
+    border-bottom: 2px solid #42c9ca;
+    height: 25px;
+}
+
+input::placeholder {
+    color: #42c9ca;
+}
+
+button {
+    margin-top: 25px;
+    background: none;
+    border: 2px solid #42c9ca;
+    padding: 5px 30px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    color: #42c9ca;
+}
+
+button:hover {
+    background: #42c9ca;
+    color: #ffffff;
+    cursor: pointer;
+}

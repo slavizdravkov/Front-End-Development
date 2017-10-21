@@ -1,0 +1,130 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Tahoma", "Helvetica", sans-serif;
+    font-size: 14px;
+    background: #EBEBEB;
+    padding: 0 150px;
+}
+
+header {
+    background: #F1F1F1;
+    border-bottom: 1px dashed #D9D9D9;
+    padding: 15px 0 15px 15px;
+}
+
+header h1 {
+    color: #3AA2E5;
+    font-weight: normal;
+    font-size: 28px;
+}
+
+.basic-info {
+    margin-top: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #D9D9D9;
+}
+
+.info, .search {
+    display: inline-block;
+}
+
+.info {
+    width: 85%;
+}
+
+.info h2 {
+    margin-bottom: 15px;
+}
+
+.search {
+    width: 14%;
+}
+
+.search label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.search input {
+    height: 32px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+
+.search::after {
+    font-family: FontAwesome, serif;
+    content: "\f002";
+    margin-left: -28px;
+    font-size: 18px;
+}
+
+form {
+    margin-top: 20px;
+    border-bottom: 1px dashed #D9D9D9;
+    padding-bottom: 10px;
+}
+
+.details, .request {
+    display: inline-block;
+}
+
+.details input {
+    display: block;
+    margin-top: 10px;
+    height: 25px;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.request {
+    float: right;
+    vertical-align: top;
+    width: 50%;
+}
+
+.reservation-options {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reservation-options div {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.reservation-options div label {
+    display: block;
+}
+
+.reservation-options div select {
+    width: 270px;
+    height: 25px;
+}
+
+button {
+    text-transform: capitalize;
+    background: #3AA2E5;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 5px;
+    color: #ffffff;
+    float: right;
+    margin-top: 30px;
+}
+
+button:hover {
+    background: #3BBC96;
+    cursor: pointer;
+}

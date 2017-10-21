@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+    font-size: 16px;
+    background: #EEEEEE;
+    color: #1E1917;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+main header {
+    width: 100%;
+    background: #ffffff;
+    border-top: 10px solid #324E5B;
+    border-left: 10px solid #324E5B;
+}
+
+main header h1 {
+    text-transform: uppercase;
+    padding: 15px;
+    color: #324E5B;
+    font-size: 40px;
+}
+
+form {
+    padding: 50px;
+}
+
+form div {
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.text-box input {
+    width: 500px;
+    height: 30px;
+    border-top: 5px solid #324E5B;
+    border-left: 5px solid #324E5B;
+
+}
+
+form div span {
+    margin-right: 230px;
+    font-size: 14px;
+}
+
+.group {
+    background: #ffffff;
+    width: 500px;
+    border-top: 5px solid #324E5B;
+    border-left: 5px solid #324E5B;
+    padding-bottom: 5px;
+}
+
+.group span {
+    display: block;
+    margin: 10px;
+}
+
+a {
+    color: #136F63;
+    font-size: 15px;
+}
+
+button {
+    width: 200px;
+    height: 30px;
+    background: none;
+    border: none;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.cancel {
+    border-bottom: 5px solid red;
+    border-right: 5px solid red;
+    color: red;
+    margin: 0 50px;
+}
+
+.save {
+    border-bottom: 5px solid #136F63;
+    border-right: 5px solid #136F63;
+    color: #136F63;
+}

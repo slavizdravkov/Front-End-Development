@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit User Form</title>
+    <link rel="stylesheet" href="edit-user-form.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>edit user</h1>
+        </header>
+        <form action="#" method="post">
+            <div class="text-box">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username">
+            </div>
+            <div class="text-box">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+            </div>
+            <div class="text-box">
+                <label for="phone">Phone number</label>
+                <input type="text" name="phone" id="phone">
+            </div>
+            <div>
+                <label>User type</label>
+                <span><input type="radio" name="user-type" value="broadband"> Broadband</span>
+                <span><input type="radio" name="user-type" value="radio"> Radio</span>
+            </div>
+            <div class="text-box">
+                <label for="change-pass">Change Password</label>
+                <input type="password" name="change-pass" id="change-pass">
+            </div>
+            <div>
+                <label>Groups</label>
+                <div class="group">
+                    <span>
+                        <input type="checkbox"> All groups
+                    </span>
+                    <span>
+                        <input type="checkbox"> Group 1
+                    </span>
+                    <span>
+                        <input type="checkbox"> Group 2
+                    </span>
+                    <span>
+                        <input type="checkbox"> Group 3
+                    </span>
+                    <span>
+                        <input type="checkbox"> Group 4
+                    </span>
+                </div>
+            </div>
+            <div>
+                <label>Contacts</label>
+                <a href="#">See Contacts list</a>
+            </div>
+            <div>
+                <button class="cancel">CANCEL</button>
+                <button type="submit" class="save">SAVE</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

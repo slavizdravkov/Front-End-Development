@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+input {
+    display: block;
+}
+
+body {
+    font-family: 'Tahoma', 'Helvetica', sans-serif;
+    background: #EEEEEE;
+}
+
+main {
+    width: 800px;
+    margin: 10px auto;
+    padding: 50px 50px;
+    background: #ffffff;
+}
+
+main header {
+    text-align: center;
+    border-bottom: 2px solid #EEEEEE;
+}
+
+main header h1 {
+    padding-bottom: 25px;
+    font-size: 24px;
+}
+
+main header p {
+    font-size: 14px;
+    padding-bottom: 25px;
+}
+
+form {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.new-account {
+    float: left;
+}
+
+.login {
+    float: right;
+}
