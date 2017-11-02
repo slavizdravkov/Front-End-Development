@@ -1,0 +1,51 @@
+@media screen and (max-width: 960px) {
+    body #wrapper {
+        max-width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 780px) {
+    body #wrapper > header nav ul {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    body #wrapper > header h1 a {
+        justify-content: center;
+    }
+
+    body #wrapper > header nav ul {
+        flex-direction: column;
+    }
+
+    body #wrapper > header nav ul li {
+        width: 100%;
+
+    }
+
+    body #wrapper > section {
+        width: 100%;
+    }
+
+    body #wrapper > aside {
+        width: 100%;
+    }
+
+    body #wrapper > aside div {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body #wrapper > aside {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+    body #wrapper > aside div {
+        width: 100%;
+    }
+}
