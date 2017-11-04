@@ -1,0 +1,20 @@
+header {
+    background: url("./images/Fall-Nature-Background-Pictures.jpg") center center;
+    background-size: cover;
+    position: relative;
+    height: 1080px;
+    z-index: 0;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: -1;
+    background: #222326;
+}
+
+header .row {
+    height: 500px;
+}
