@@ -1,0 +1,254 @@
+$wrapper-border: 1px double #000000;
+$header-border: 1px double #000000;
+$section-border: 1px double #000000;
+$li-border: 1px double #000000;
+$text-color: #808080;
+
+@mixin gradient($type, $direction, $startColor, $endColor) {
+  background: #{$type}-gradient($direction, $startColor, $endColor); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+@mixin color-box-properties {
+  width: 20%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+@mixin article-style {
+  border: 1px solid #000000;
+  margin: 20px;
+}
+
+@mixin article-header-style {
+  border: none;
+  h2 {
+    font-size: 15px;
+  }
+}
+
+@mixin inner-container-style {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  height: 120px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: $text-color;
+  @include gradient(linear, to bottom, #808080, #FFFFFF);
+  #wrapper {
+    width: 65%;
+    margin: 0 auto;
+    background: #FFFFFF;
+    text-align: center;
+    border: $wrapper-border;
+    header {
+      border: $header-border;
+      margin: 20px;
+      h1 {
+        margin-top: 10px;
+      }
+      nav {
+        margin-top: 25px;
+        margin-bottom: 15px;
+        ul {
+          list-style: none;
+          li {
+            display: inline-block;
+            border: $li-border;
+            padding: 10px 15px;
+            margin-right: 35px;
+            a {
+              text-decoration: none;
+              color: $text-color;
+            }
+          }
+          li:hover {
+            @include gradient(linear, to bottom, #808080, #FFFFFF);
+            a {
+              color: #FFFFFF;
+            }
+          }
+        }
+      }
+    }
+    .linear {
+      border: $section-border;
+      margin: 0 20px 20px 20px;
+      #linear {
+        border: none;
+        h1 {
+          font-size: 20px;
+          text-decoration: underline;
+        }
+      }
+      article {
+        &:nth-of-type(1) {
+          @include article-style;
+          #vertical {
+            @include article-header-style;
+          }
+          .innerContainer {
+            @include inner-container-style;
+            .purple {
+              @include color-box-properties;
+              @include gradient(linear, to bottom, #33043a, #FFFFFF);
+            }
+            .blue {
+              @include color-box-properties;
+              @include gradient(linear, to bottom, #0000ff, #FFFFFF);
+            }
+            .green {
+              @include color-box-properties;
+              @include gradient(linear, to bottom, #023202, #FFFFFF);
+            }
+            .yellow {
+              @include color-box-properties;
+              @include gradient(linear, to bottom, #ffff00, #FFFFFF);
+            }
+            .orange {
+              @include color-box-properties;
+              @include gradient(linear, to bottom, #ec9202, #FFFFFF);
+            }
+            .red {
+              @include color-box-properties;
+              @include gradient(linear, to bottom, #ff0000, #FFFFFF);
+            }
+          }
+        }
+        &:nth-of-type(2) {
+          @include article-style;
+          #horizontal {
+            @include article-header-style;
+          }
+          .innerContainer {
+            @include inner-container-style;
+            .purple {
+              @include color-box-properties;
+              @include gradient(linear, to right, #33043a, #FFFFFF);
+            }
+            .blue {
+              @include color-box-properties;
+              @include gradient(linear, to right, #0000ff, #FFFFFF);
+            }
+            .green {
+              @include color-box-properties;
+              @include gradient(linear, to right, #023202, #FFFFFF);
+            }
+            .yellow {
+              @include color-box-properties;
+              @include gradient(linear, to right, #ffff00, #FFFFFF);
+            }
+            .orange {
+              @include color-box-properties;
+              @include gradient(linear, to right, #ec9202, #FFFFFF);
+            }
+            .red {
+              @include color-box-properties;
+              @include gradient(linear, to right, #ff0000, #FFFFFF);
+            }
+          }
+        }
+        &:nth-of-type(3) {
+          @include article-style;
+          #diagonal {
+            @include article-header-style;
+          }
+          .innerContainer {
+            @include inner-container-style;
+            .purple {
+              @include color-box-properties;
+              @include gradient(linear, 135deg, #33043a, #FFFFFF);
+            }
+            .blue {
+              @include color-box-properties;
+              @include gradient(linear, 135deg, #0000ff, #FFFFFF);
+            }
+            .green {
+              @include color-box-properties;
+              @include gradient(linear, 135deg, #023202, #FFFFFF);
+            }
+            .yellow {
+              @include color-box-properties;
+              @include gradient(linear, 135deg, #ffff00, #FFFFFF);
+            }
+            .orange {
+              @include color-box-properties;
+              @include gradient(linear, 135deg, #ec9202, #FFFFFF);
+            }
+            .red {
+              @include color-box-properties;
+              @include gradient(linear, 135deg, #ff0000, #FFFFFF);
+            }
+          }
+        }
+      }
+    }
+    .radial {
+      border: $section-border;
+      margin: 0 20px 20px 20px;
+      #radial {
+        border: none;
+        h1 {
+          font-size: 20px;
+          text-decoration: underline;
+        }
+      }
+      article {
+        @include article-style;
+        .innerContainer {
+          @include inner-container-style;
+          .purple {
+            @include color-box-properties;
+            @include gradient(radial, circle, #33043a, #FFFFFF);
+          }
+          .blue {
+            @include color-box-properties;
+            @include gradient(radial, circle, #0000ff, #FFFFFF);
+          }
+          .green {
+            @include color-box-properties;
+            @include gradient(radial, circle, #023202, #FFFFFF);
+          }
+          .yellow {
+            @include color-box-properties;
+            @include gradient(radial, circle, #ffff00, #FFFFFF);
+          }
+          .orange {
+            @include color-box-properties;
+            @include gradient(radial, circle, #ec9202, #FFFFFF);
+          }
+          .red {
+            @include color-box-properties;
+            @include gradient(radial, circle, #ff0000, #FFFFFF);
+          }
+        }
+      }
+    }
+    footer {
+      border: $header-border;
+      margin: 0 20px 20px 20px;
+      h3 {
+        margin: 15px 0;
+        text-decoration: underline;
+      }
+      ul {
+        list-style: none;
+        margin-bottom: 10px;
+        li {
+          a {
+            text-decoration: none;
+            color: $text-color;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}

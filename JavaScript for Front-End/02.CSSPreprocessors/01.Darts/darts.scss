@@ -1,0 +1,73 @@
+$brown: #A52A2A;
+$blue: #0000FF;
+$green: #ADFF2F;
+$yellow: #FFFF00;
+$red: #FF0000;
+$border-radius: 50%;
+
+@mixin element-properties($dimensions, $bg, $zIndex, $offsetIndex) {
+  width: $dimensions;
+  height: $dimensions;
+  background: $bg;
+  border-radius: $border-radius;
+  z-index: $zIndex;
+  text-align: center;
+  line-height: $dimensions;
+  position: absolute;
+  top: $offsetIndex;
+  left: $offsetIndex;
+  color: #FFFFFF;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+}
+
+@mixin number-properties($top, $left) {
+  width: 40px;
+  top: $top;
+  left: $left;
+  position: absolute;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 100px;
+  margin-left: 300px;
+  width: 1000px;
+  position: relative;
+  .ten {
+    @include element-properties(390px, $brown, 0, 0);
+    span {
+      @include number-properties(-180px, 175px)
+    }
+  }
+
+  .twenty {
+    @include element-properties(330px, $blue, 1, 30px);
+    span {
+      @include number-properties(-150px, 145px)
+    }
+  }
+
+  .thirty {
+    @include element-properties(270px, $green, 2, 60px);
+    span {
+      @include number-properties(-120px, 115px)
+    }
+  }
+
+  .fifty {
+    @include element-properties(210px, $yellow, 3, 90px);
+    span {
+      @include number-properties(-90px, 85px)
+    }
+  }
+
+  .hundred {
+    @include element-properties(150px, $red, 4, 120px);
+  }
+}
