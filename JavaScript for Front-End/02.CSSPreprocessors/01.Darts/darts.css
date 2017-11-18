@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  margin-top: 100px;
+  margin-left: 300px;
+  width: 1000px;
+  position: relative; }
+  .container .ten {
+    width: 390px;
+    height: 390px;
+    background: #A52A2A;
+    border-radius: 50%;
+    z-index: 0;
+    text-align: center;
+    line-height: 390px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    font-size: 24px; }
+    .container .ten span {
+      width: 40px;
+      top: -180px;
+      left: 175px;
+      position: absolute;
+      text-align: center; }
+  .container .twenty {
+    width: 330px;
+    height: 330px;
+    background: #0000FF;
+    border-radius: 50%;
+    z-index: 1;
+    text-align: center;
+    line-height: 330px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    font-size: 24px; }
+    .container .twenty span {
+      width: 40px;
+      top: -150px;
+      left: 145px;
+      position: absolute;
+      text-align: center; }
+  .container .thirty {
+    width: 270px;
+    height: 270px;
+    background: #ADFF2F;
+    border-radius: 50%;
+    z-index: 2;
+    text-align: center;
+    line-height: 270px;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    font-size: 24px; }
+    .container .thirty span {
+      width: 40px;
+      top: -120px;
+      left: 115px;
+      position: absolute;
+      text-align: center; }
+  .container .fifty {
+    width: 210px;
+    height: 210px;
+    background: #FFFF00;
+    border-radius: 50%;
+    z-index: 3;
+    text-align: center;
+    line-height: 210px;
+    position: absolute;
+    top: 90px;
+    left: 90px;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    font-size: 24px; }
+    .container .fifty span {
+      width: 40px;
+      top: -90px;
+      left: 85px;
+      position: absolute;
+      text-align: center; }
+  .container .hundred {
+    width: 150px;
+    height: 150px;
+    background: #FF0000;
+    border-radius: 50%;
+    z-index: 4;
+    text-align: center;
+    line-height: 150px;
+    position: absolute;
+    top: 120px;
+    left: 120px;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    font-size: 24px; }
+
+/*# sourceMappingURL=darts.css.map */
